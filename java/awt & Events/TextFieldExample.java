@@ -57,8 +57,8 @@ public class TextFieldExample extends Frame implements ActionListener {
         String s1 = tf1.getText();
         String s2 = tf2.getText();
 
-        int a = Integer.parseInt(s1);
-        int b = Integer.parseInt(s2);
+        int a =  Integer.parseInt(s1);
+        int b =  Integer.parseInt(s2);
         int c = 0;
         
         if(e.getSource() == b1){
