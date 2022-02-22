@@ -19,4 +19,4 @@ public class CountString {
         System.out.println("In the given string: "+str);
         System.out.println(" e is repeated "+count+" times");
     }
-}
+} 
