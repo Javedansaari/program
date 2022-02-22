@@ -23,7 +23,7 @@ public class CountTotalCharacter {
             startWith++;
 
             for(j=0 ; j<startWith ; j++){  //this for loop is to ignore those characters that has already been counted
-                if(str.charAt(startWith) == str.charAt(j)){
+                if(str.charAt(startWith) == str.charAt(j) || str.charAt(startWith) == ' '){ //ignoring white space
                     startWith++;
                 }
             }
