@@ -12,8 +12,11 @@ public class RemoveWhiteSpace {
                 ch[i]=ch[i+1];
             }
         }      
-          
+
         String str1 = String.copyValueOf(ch);
-        System.out.println(str1);
+        System.out.println("Before remove white space "+str);
+        System.out.println("After removing white space  "+str1);
+        System.out.println(str1.length());
+
     }
 }
