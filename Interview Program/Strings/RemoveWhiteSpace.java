@@ -1,4 +1,3 @@
-import java.util.Arrays;
 
 public class RemoveWhiteSpace {
     public static void main(String args[]){
@@ -16,7 +15,5 @@ public class RemoveWhiteSpace {
         String str1 = String.copyValueOf(ch);
         System.out.println("Before remove white space "+str);
         System.out.println("After removing white space  "+str1);
-        System.out.println(str1.length());
-
     }
 }
