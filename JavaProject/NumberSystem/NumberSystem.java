@@ -98,24 +98,23 @@ public class NumberSystem {
     }
 
     public void fiveDigitNumb(int x){
-        int tth = x/10000;
-        int k = x/1000;
-        int l = x%1000;
+        int tth = x/1000;
+        int k = x%1000;
 
-        String len = Integer.toString(k);
-        String len1 = Integer.toString(l);
+        String len = Integer.toString(tth);
+        String len1 = Integer.toString(k);
 
-        twoDigitNumb(k);
+        twoDigitNumb(tth);
         System.out.print(" "+thou+" " );
 
         if(len1.length() == 3){
-            threeDigitNumb(l);
+            threeDigitNumb(k);
         }else if(len1.length() == 2){
             System.out.print(" and ");
-            twoDigitNumb(l);
+            twoDigitNumb(k);
         }else{
             System.out.print(" and ");
-            oneDigitNumb(l);
+            oneDigitNumb(k);
         }
     }
     public static void main(String args[]){
