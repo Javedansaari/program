@@ -1,8 +1,8 @@
 public class NumberCombinationSum {
     public static void main(String args[]){
 
-        int[] arr = {0,1,2,3,4,5,6,7,8};
-
+        int[] arr = {0,1,2,3,4,5,6,7,2,8,3,9};
+        int sumOfInteger = 9;
         //arr[i] + arr[i+1] +...+arr[n] = 9;
         int twoDigitSum = 0, threeDigitSum = 0, fourDigitSum = 0;
         for(int i=0 ; i<arr.length ; i++){
@@ -18,18 +18,16 @@ public class NumberCombinationSum {
                     for(int l=k+1 ; l>k && l<arr.length ; l++){
                         if(arr[l] == 0)l++;
                         fourDigitSum = arr[i] + arr[j] + arr[k] + arr[l];
-                        if(fourDigitSum == 9){
-                            System.out.println("sum: " + arr[i]+" + "+arr[j]+" + "+arr[k]+ " + " + arr[l]+ " = 9 ");
+                        if(fourDigitSum == sumOfInteger){
+                            System.out.println("sum: " + arr[i]+" + "+arr[j]+" + "+arr[k]+ " + " + arr[l]+ " = " +sumOfInteger);
                         }
                     }
-                    if(threeDigitSum == 9){
-                        System.out.println("sum: " + arr[i]+" + "+arr[j]+" + "+arr[k]+ " = 9 ");
-                        //continue;
+                    if(threeDigitSum == sumOfInteger){
+                        System.out.println("sum: " + arr[i]+" + "+arr[j]+" + "+arr[k]+ " = "+sumOfInteger);
                     }
                 }
-                if(twoDigitSum == 9){
-                    System.out.println("sum: " + arr[i]+" + "+arr[j]+ " = 9 ");
-                    //continue;
+                if(twoDigitSum == sumOfInteger){
+                    System.out.println("sum: " + arr[i]+" + "+arr[j]+ " = "+sumOfInteger);
                 }
             }
         }
