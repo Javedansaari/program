@@ -14,6 +14,12 @@ public class NumbersToWords{
             " Eight ",
             " Nine ",
             " Ten ",
+            
+
+        };
+
+        String[] twos = {
+            "",
             " Eleven ",
             " Twelve ",
             " Thirteen ",
@@ -39,7 +45,9 @@ public class NumbersToWords{
             " Seventy ",
             " Eighty ",
             " Ninety ",
+
         };
+        
         String hun = " Hundred ";
         String th = " Thousand ";
 
@@ -74,7 +82,6 @@ public class NumbersToWords{
                 System.out.println(tens[t] + ones[u]);
             }
             
-
         }
         
         if(str.length() == 3){
