@@ -11,27 +11,27 @@ public class LinkedListInsertAtLast {
         }
     }
 
-    public void insertAtEnd(int new_data){
+    public void append(int new_data){
         
         Node new_Node = new Node(new_data);
         if(head == null){
-            head = new_Node;
-            return;
-        }else{
-            Node last = head;
-            while(last.next != null){
-                last = last.next;
-            }
-            last.next = new_Node;
-            new_Node.next = null;
+            head = new Node(new_data);
             return;
         }
+        new_Node.next = null;
+
+        Node last = head;
+        while(last.next != null)
+            last = last.next;
+            
+        last.next = new_Node;
+        return;
     }
 
     public void printData(){
         Node n = head;
         while(n != null){
-            System.out.print(n.next+" ");
+            System.out.print(n.data+" ");
             n = n.next;
         }
     }
@@ -40,13 +40,8 @@ public class LinkedListInsertAtLast {
         LinkedListInsertAtLast llist = new LinkedListInsertAtLast();
 
         llist.head = new Node(42);
-        Node q1 = new Node(13);
-        Node q2 = new Node(98);
-        Node q3 = new Node(67);
-
-        llist.head.next = q1;
-        q1.next = q2;
-        q2.next = q3;
+        llist.append(32);
+        llist.append(59);
 
         llist.printData();
         System.out.println();
