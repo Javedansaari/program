@@ -1,17 +1,11 @@
-import java.util.Scanner;
 
 public class swapStringExample {
     public static void main(String[] args){
 
-        Scanner sc = new Scanner(System.in);
-
-        String str = "javedansarixy";
+        String str = "javedansari";
         String temp = null;
         String temp1 = null;
         String[] strArray = null;
-
-        //System.out.println("enter a string value   ");
-        //str = sc.next();
 
         int noOfSpace = str.length()/2;
         int remainingElement = str.length()%4;
